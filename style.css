@@ -1,5 +1,8 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +12,7 @@
 }
 :root{
     --fonte-padrão: 'Alumni Sans Pinstripe', sans-serif;
+    --fonte-nome: 'Silkscreen', cursive;
     --fonte-1: 'Lexend Deca', sans-serif;
     --fonte-2: 'Nunito', sans-serif;
     --fonte-3: 'Press Start 2P', cursive;
@@ -25,88 +29,205 @@ body {
 
 }
 .titulo {
+    /* width: 100vw; */
+    height: 11.5vh;
     color: white;
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-color: #302D5B;
+      
 }
-.conteudo {    
-    width: 50vw;
-    height: 50vh;    
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;    
-    padding: 3vh;
-    /* padding-bottom: 10vh; */
-    margin: 10px;
-    border-radius: 5px;
+.titulo h1 {
+    display: flex;
+    position: absolute;    
+    font-family: var(--fonte-2);
+    font-weight: bolder;
+    font-size: 3rem;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding: 10px;  
+    margin: 10px;    
+}
+nav.navbar__menu {
+    display: flex;
+    color: white;
+    font-size: 3vh;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-right: 10px;
     
 }
+nav.navbar__menu ul {   
+    font-family: var(--fonte-2);
+    font-weight: bolder;
+    font-size: 2rem; 
+    padding: 10px;
+    margin: 10px;
+}
+nav.navbar__menu ul:hover{
+    background-color: rgba(204, 204, 204, 0.171);
+    color: white;
+    border-radius: 5px;
+    border: 2px inset rgba(0, 0, 0, 0.274);
+}
+
+.conteudo {       
+    background-image: url('./images/Purple\ Illustrated\ Digital\ Tech\ Class\ Google\ Classroom\ Header.png');  
+    background-repeat: no-repeat;
+    padding: 3vh;
+    /* padding-bottom: 10vh; */
+    margin: 30px;
+    border-radius: 5px;
+    text-align: justify;  
+    box-shadow: 1px 1px 10px black;   
+}
+
 .conteudo h2 {
-    display: block;
-    font-size: 3vw;
-    color: white;    
+    font-size: 2.8vw;
+    color: white;  
+    
+}
+.conteudo span {
+    font-family: var(--fonte-2);
+    /* font-weight: bolder; */
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    
+
 }
 
 .imagem__fundo {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    background-color: rgb(51, 51, 51);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
     background-size: cover;
     background-attachment: fixed;
+}
+.texto__img__fundo {
+    display: flex;
+    justify-content: end;
+    
+}
+.texto__img__fundo  h2 {
+    font-family: var(--fonte-padrão);
+    font-size: 3vh;
+    max-width: 250px;
+    background-color: rgba(255, 254, 254, 0.13);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    padding: 10px;
+    border-radius: 5px;
 }
 .projetos {
     margin: 20px;
     padding: 0;
+    
 }
-#prj01 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+.projetos h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--fonte-1);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+}
+.prj01 {    
     box-sizing: border-box;
     align-content: center;
     justify-content: center;
     align-items: center;
-    justify-items: center;
-    /* background-color: #333; */
-    /* 
-    flex-direction: row;
-    width: 100%;
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    min-height: 50vh;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; */
+    justify-items: center;    
 }
-.nome {
-    background: #b92b27;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-
+.imagem {
+    box-shadow: 50px 50px 100px black inset;
+}
+.imagem{
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px grey;
 }
 #img01 {
     background-image: url('./images/pexels-daria-shevtsova-1356300.jpg');
     background-position: center;
 }
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
+    .titulo {
+
+    }
+    .conteudo {
+        height: 55vh;
+        background-position: center;
+        background-size: cover;
+    }
     .conteudo h2 {
-        font-size: 2rem;
+        font-size: 2.45rem;
         color: white;
+    }
+    .prj01 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+}
+@media only screen and (min-width: 900px){
+    .conteudo {
+        max-height: 240px;
+        background-image: url('./images/Purple\ Illustrated\ Digital\ Tech\ Class\ Google\ Classroom\ Header_960.png');
+        background-size: cover;
+        /* justify-content: center;
+        justify-items: center;
+        align-items: center; */
+    }
+    .conteudo h2 {
+        max-width: 300px;
+        font-size: 1.45rem;
+        color: white;
+    }
+    .imagem__fundo h2 {
+        font-size: 4.5vh;
+        text-align: justify;
+        max-width: 400px;
+    }
+    .prj01 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        
     }
 }
 
-/* @media screen and (max-width: 1000px){
-    .conteudo h2 {
-        font-size: 2.2rem;
-        color: white;
+@media only screen and (min-width: 1920px){
+    .conteudo {
+        max-height: 400px;
+        background-size: cover;
+
     }
-} */
+    .conteudo h2 {
+        max-width: 450px;
+        font-size: 2.27rem;
+        color: white;
+        
+    }
+    .prj01 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        
+    }
+}
