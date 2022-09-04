@@ -148,24 +148,74 @@ nav.navbar__menu ul:hover{
     margin: 10px;
 }
 .prj01 {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     box-sizing: border-box;
     align-content: center;
     justify-content: center;
     align-items: center;
     justify-items: center;    
 }
-.imagem {
+/* .imagem {
     box-shadow: 50px 50px 100px black inset;
 }
 .imagem{
     border-radius: 10px;
     box-shadow: 5px 5px 15px grey;
+} */
+.card {
+    height: 18rem;
+    width: 30rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    
+
+}
+.card img {
+    height: 100%;
+    width: 100%;
+}
+
+.card:hover .details {
+    opacity: 1;
+    height: 100%;
+    
+    
+}
+.details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.5s ease;
+    color: white;
+    padding: 5px;
+}
+.details h3{
+    font-size: 45px;
+    font-weight: 600;
+}
+.details p {
+    text-align: justify;
+    text-justify: newspaper;
+    margin: 2px 0;
+    font-size: 28px;
+    font-style: italic;
 }
 #img01 {
     background-image: url('./images/pexels-daria-shevtsova-1356300.jpg');
     background-position: center;
 }
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
     .titulo {
 
     }
@@ -190,9 +240,7 @@ nav.navbar__menu ul:hover{
         max-height: 240px;
         background-image: url('./images/Purple\ Illustrated\ Digital\ Tech\ Class\ Google\ Classroom\ Header_960.png');
         background-size: cover;
-        /* justify-content: center;
-        justify-items: center;
-        align-items: center; */
+        
     }
     .conteudo h2 {
         max-width: 300px;
@@ -230,4 +278,4 @@ nav.navbar__menu ul:hover{
         gap: 10px;
         
     }
-}
+} */
